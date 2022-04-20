@@ -1,8 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -30,7 +33,7 @@ body, html {
     left: 0;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     color: whitesmoke;
 }
@@ -38,16 +41,27 @@ body, html {
 .nav-links {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .nav-links li {
     margin: 0 30px;
 }
 
+.logo {
+    font-size: 33px;
+    letter-spacing: .25rem;
+    margin-top: 10px;
+}
+
+.logo span {
+    color: #14213d;
+}
+
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url('./img/tent.jpg');
+    background-image: url('./img/main.jpg');
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -56,16 +70,23 @@ header {
 }
 
 .header-content {
-    margin-bottom: 150px;
+    margin-bottom: 250px;
     text-align: center;
+    color: #14213d;
+    margin-left: 5px;
+
 }
 
 .header-content h2 {
-    font-size: 4vmin;
+    font-size: 10vmin;
+}
+
+.header-content h1 {
+    font-size: 8vmin;
 }
 
 .line {
-    width: 150px;
+    width: 420px;
     height: 4px;
     background-color: red;
     margin: 10px auto;
@@ -74,7 +95,7 @@ header {
 
 .header-content h1 {
     font-size: 7vmin;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -82,6 +103,12 @@ header {
     font-size: 25px;
     padding: 8px 15px;
     color: whitesmoke;
+    transition: transform .2s;
+}
+
+#cta:hover {
+    color: #14213d;
+    transform: scale(1.3);
 }
 
 #menu-btn {
