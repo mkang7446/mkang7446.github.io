@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
 
 * {
     margin: 0;
@@ -127,21 +127,183 @@ section {
     margin: 80px auto;
     height: 100vh;
 }
-.title {
+.aboutme-title {
+    margin-top: 150px;
+    margin-bottom: 100px;
     text-align: center;
     font-size: 4vmin;
-    color: blue;
+    color: #14213d;
 }
-.row {
+.aboutme-content{
     display: flex;
     align-items: center;
-    border: 2px solid red;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 
 }
-.row img {
+
+.aboutme-img {
     width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme-content img {
+    width: 70%;
+    box-shadow: 0 5px 10px 0 #14213d;
+}
+
+.aboutme-pbs {
+    width: 50%;
+    line-height: 2.5rem;
+}
+
+.aboutme-pbs h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.aboutme-pbs p {
+    font-size: 20px;
+}
+
+.aboutme-line {
+    width: 260px;
+    height: 4px;
+    background-color: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.aboutme-pbs button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.aboutme-pbs button:active,
+.aboutme-pbs button:hover {
+  outline: 0;
+}
+
+.aboutme-pbs button span {
+  background-color: #14213d;
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.aboutme-pbs button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.skills-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 4vmin;
+    color: #14213d;
+}
+
+.skills-line {
+    width: 260px;
+    height: 4px;
+    background-color: red;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.col-container p {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#skills-col {
+    width: 250px;
+    height: 240px;
+    box-shadow: 0 3px 10px 0 #14213d;
+    border-radius: 5px;
+}
+
+
+
+.projects-title {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 4vmin;
+    color: #14213d;
+}
+
+.projects-line {
+    width: 260px;
+    height: 4px;
+    background-color: red;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.contact-title {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 4vmin;
+    color: #14213d;
+}
+
+.contact-line {
+    width: 260px;
+    height: 4px;
+    background-color: red;
+    margin: auto;
+    border-radius: 5px;
 }
 
 
