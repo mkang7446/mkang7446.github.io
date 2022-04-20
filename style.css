@@ -105,7 +105,7 @@ header {
         height: 100vh;
         justify-content: center;
         background-color: pink;
-        margin-top: -900px;
+        margin-top: -1000px;
     }
     .mobile-menu {
         margin-top: 0px;
