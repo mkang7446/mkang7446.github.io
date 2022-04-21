@@ -88,7 +88,7 @@ header {
 .line {
     width: 420px;
     height: 4px;
-    background-color: red;
+    background-color: #5B42F3;
     margin: 10px auto;
     border-radius: 5px;
 }
@@ -123,10 +123,11 @@ header {
 
 /* About me */
 section {
-    width: 80%;
+    width: 100%;
     margin: 80px auto;
     height: 100vh;
 }
+
 .aboutme-title {
     margin-top: 150px;
     margin-bottom: 100px;
@@ -169,9 +170,9 @@ section {
 }
 
 .aboutme-line {
-    width: 260px;
+    width: 210px;
     height: 4px;
-    background-color: red;
+    background-color: #5B42F3;
     margin: 10px auto;
     border-radius: 5px;
 }
@@ -220,11 +221,13 @@ section {
 }
 
 @media (min-width: 768px) {
-  .button-64 {
+.aboutme-pbs button  {
     font-size: 24px;
     min-width: 196px;
   }
 }
+
+/* Skills */
 
 .skills-title {
     margin-top: 30px;
@@ -236,7 +239,7 @@ section {
 .skills-line {
     width: 260px;
     height: 4px;
-    background-color: red;
+    background-color: #5B42F3;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -259,7 +262,7 @@ section {
     margin-top: 15px;
 }
 
-.row {
+#skills-row {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -272,7 +275,13 @@ section {
     border-radius: 5px;
 }
 
+/* Projects */
 
+#projects-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
 .projects-title {
     margin-top: 30px;
@@ -285,10 +294,88 @@ section {
 .projects-line {
     width: 260px;
     height: 4px;
-    background-color: red;
+    background-color: #5B42F3;
     margin: auto;
     border-radius: 5px;
 }
+
+#projects-col {
+    width: 520px;
+    height: 70vh;
+    /* border-bottom: 1px solid black; */
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+
+.projects-content {
+    height: 240px;
+}
+.projects-content p {
+    margin-bottom: 30px;
+}
+.projects-content h5 {
+    color: #5B42F3;
+    font-weight: 900;
+}
+
+#projects-col h1 {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    margin-bottom: 25px;
+}
+
+.projects-col-img img{
+    height: 300px;
+    width: 100%;
+    box-shadow: 0 5px 10px 0 #14213d;
+    margin-bottom: 25px;
+}
+
+.project-btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects-btn {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 120px;
+  border: 2px solid #5B42F3;
+}
+
+.projects-btn:hover,
+.projects-btn:focus {
+  opacity: .75;
+}
+
+/* Contact */
 
 .contact-title {
     margin-top: 30px;
@@ -305,6 +392,7 @@ section {
     margin: auto;
     border-radius: 5px;
 }
+
 
 
 /* Mobile Veiw */
