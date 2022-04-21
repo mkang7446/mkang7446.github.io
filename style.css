@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
 
 * {
@@ -22,7 +21,8 @@ ul {
     font-weight: bold;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
@@ -50,6 +50,7 @@ body, html {
     text-decoration: none;
     color: white;
 }
+
 .nav-links a {
     color: whitesmoke;
 }
@@ -159,7 +160,8 @@ section {
     font-size: 4vmin;
     color: #14213d;
 }
-.aboutme-content{
+
+.aboutme-content {
     display: flex;
     align-items: center;
     width: 100%;
@@ -178,7 +180,7 @@ section {
 }
 
 .aboutme-img {
-    width: 40%;
+    width: 28%;
     display: flex;
     justify-content: center;
 }
@@ -219,7 +221,7 @@ section {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
@@ -238,40 +240,40 @@ section {
     width: 300px;
     border: 2px solid #5B42F3;
     margin-top: 40px;
-  }
-  
-  .aboutme-pbs button:hover,
-  .aboutme-pbs button:focus {
+}
+
+.aboutme-pbs button:hover,
+.aboutme-pbs button:focus {
     opacity: .75;
-  }
+}
 
 @media (max-width: 768px) {
-.aboutme-pbs button  {
-    background-color: #14213d;
-    border-radius: 4px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    margin: 0;
-    min-height: 44px;
-    outline: none;
-    overflow: hidden;
-    padding: 9px 20px 8px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 200px;
-    border: 2px solid #5B42F3;
-  }
+    .aboutme-pbs button {
+        background-color: #14213d;
+        border-radius: 4px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0;
+        min-height: 44px;
+        outline: none;
+        overflow: hidden;
+        padding: 9px 20px 8px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 200px;
+        border: 2px solid #5B42F3;
+    }
 }
 
 /* Skills */
@@ -339,13 +341,13 @@ section {
 }
 
 @media (max-width: 768px) {
-    #projects-row   {
+    #projects-row {
         display: flex;
         justify-content: center;
         gap: 200px;
         flex-direction: column;
-      }
     }
+}
 
 .projects-title {
     margin-top: 30px;
@@ -366,7 +368,6 @@ section {
 #projects-col {
     width: 520px;
     height: 70vh;
-    /* border-bottom: 1px solid black; */
     text-align: center;
     line-height: 2rem;
     letter-spacing: 2px;
@@ -375,9 +376,11 @@ section {
 .projects-content {
     height: 240px;
 }
+
 .projects-content p {
     margin-bottom: 30px;
 }
+
 .projects-content h5 {
     color: #5B42F3;
     font-weight: 900;
@@ -390,12 +393,10 @@ section {
     padding-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    /* border-top: 1px solid black;
-    border-bottom: 1px solid black; */
     margin-bottom: 25px;
 }
 
-.projects-col-img img{
+.projects-col-img img {
     height: 300px;
     width: 100%;
     box-shadow: 0 5px 10px 0 #14213d;
@@ -408,36 +409,36 @@ section {
 }
 
 .projects-btn {
-  background-color: #222;
-  border-radius: 4px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0;
-  min-height: 44px;
-  min-width: 10px;
-  outline: none;
-  overflow: hidden;
-  padding: 9px 20px 8px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 120px;
-  border: 2px solid #5B42F3;
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 120px;
+    border: 2px solid #5B42F3;
 }
 
 .projects-btn:hover,
 .projects-btn:focus {
-  opacity: .75;
+    opacity: .75;
 }
 
 @media (max-width: 768px) {
@@ -445,6 +446,7 @@ section {
     #projects {
         margin-bottom: 100px;
     }
+
     .projects-btn {
         background-color: #222;
         border-radius: 4px;
@@ -453,7 +455,7 @@ section {
         color: #fff;
         cursor: pointer;
         display: inline-block;
-        font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+        font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
         font-size: 16px;
         font-weight: 700;
         line-height: 1.5;
@@ -473,8 +475,8 @@ section {
         border: 2px solid #5B42F3;
         margin-top: 100px;
         margin-bottom: 100px;
-      }
     }
+}
 
 /* Contact */
 
@@ -544,7 +546,6 @@ section {
 
 #contact-link:hover {
     display: flex;
-    /* gap: 50px; */
     transform: scale(1.03);
     color: #5B42F3;
 }
@@ -567,7 +568,7 @@ section {
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
@@ -585,28 +586,28 @@ section {
     touch-action: manipulation;
     width: 120px;
     border: 2px solid #5B42F3;
-  }
-  
-  .contact-btn:hover,
-  .contact-btn:focus {
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
     opacity: .75;
-  }
+}
 
-  footer {
-      width: 100%;
-      background-color: #14213d;
-      height: 10%;
-      color: white;
-      font-size: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 20px;
-      padding-bottom: 15px;
-  }
+footer {
+    width: 100%;
+    background-color: #14213d;
+    height: 10%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
 
-  @media (max-width: 768px) {
-    .contact-container  {
+@media (max-width: 768px) {
+    .contact-container {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -614,19 +615,19 @@ section {
         margin-bottom: 0;
         gap: 0;
         margin-top: 0;
-      }
+    }
 
-      #contact-link h2 {
-          font-size: 15px;
-          margin-top: 20px;
+    #contact-link h2 {
+        font-size: 15px;
+        margin-top: 20px;
     }
 
     .contact-form {
         padding: 20px 50px 0 30px;
         width: 100%;
         box-shadow: 0 5px 10px 0 #14213d;
-        /* margin-bottom: 100px; */
     }
+
     .contact-info {
         width: 40%;
         display: flex;
@@ -640,24 +641,26 @@ section {
         margin: 0;
         margin-bottom: 20px;
     }
-    
-    }
 
-
+}
 
 /* Mobile Veiw */
+
 @media only screen and (max-width:850px) {
     #menu-btn {
         display: block;
     }
+
     .navbar {
         padding: 0;
     }
+
     .logo {
         position: absolute;
         top: 30px;
         left: 30px;
     }
+
     .nav-links {
         flex-direction: column;
         width: 100%;
@@ -667,11 +670,12 @@ section {
         margin-top: -1000px;
         transition: all 0.5s ease;
     }
+
     .mobile-menu {
         margin-top: 0px;
-        /* border-bottom-left-radius: 20%; */
         border-bottom-right-radius: 20%;
     }
+
     .nav-links li {
         margin: 30px auto;
     }
@@ -680,7 +684,7 @@ section {
         background: #14213d;
         padding: 50px;
     }
-    
+
     nav.sticky span {
         color: white;
     }
@@ -688,5 +692,5 @@ section {
     #menu-btn {
         margin-top: 10px;
     }
-    
+
 }
