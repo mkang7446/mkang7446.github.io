@@ -28,7 +28,7 @@ body, html {
 
 /* Navbar */
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -36,7 +36,9 @@ body, html {
     justify-content: space-around;
     padding: 20px;
     color: whitesmoke;
+    transition: .6s;
 }
+
 
 .nav-links {
     display: flex;
@@ -46,6 +48,11 @@ body, html {
 
 .nav-links li {
     margin: 0 30px;
+    text-decoration: none;
+    color: white;
+}
+.nav-links a {
+    color: whitesmoke;
 }
 
 .logo {
@@ -57,6 +64,16 @@ body, html {
 .logo span {
     color: #14213d;
 }
+
+nav.sticky {
+    background: #14213d;
+}
+
+nav.sticky span {
+    color: white;
+}
+
+/* Header */
 
 header {
     width: 100vw;
@@ -123,9 +140,9 @@ header {
 
 /* About me */
 section {
+    min-height: 100vh;
     width: 100%;
     margin: 80px auto;
-    height: 100vh;
 }
 
 .aboutme-title {
@@ -141,6 +158,16 @@ section {
     width: 100%;
     justify-content: center;
 
+}
+
+@media only screen and (max-width:850px) {
+    .aboutme-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .aboutme-img {
@@ -178,6 +205,40 @@ section {
 }
 
 .aboutme-pbs button {
+    background-color: #14213d;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 44px;
+    min-width: 60px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 300px;
+    border: 2px solid #5B42F3;
+    margin-top: 40px;
+  }
+  
+  .aboutme-pbs button:hover,
+  .aboutme-pbs button:focus {
+    opacity: .75;
+  }
+
+/* .aboutme-pbs button {
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   border: 0;
@@ -218,12 +279,34 @@ section {
 
 .aboutme-pbs button:hover span {
   background: none;
-}
+} */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .aboutme-pbs button  {
-    font-size: 24px;
-    min-width: 196px;
+    background-color: #14213d;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 44px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 200px;
+    border: 2px solid #5B42F3;
   }
 }
 
@@ -282,6 +365,15 @@ section {
     justify-content: center;
     gap: 10px;
 }
+
+@media (max-width: 768px) {
+    #projects-row   {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        flex-direction: column;
+      }
+    }
 
 .projects-title {
     margin-top: 30px;
@@ -376,6 +468,38 @@ section {
   opacity: .75;
 }
 
+@media (max-width: 768px) {
+    .projects-btn {
+        background-color: #222;
+        border-radius: 4px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0;
+        min-height: 44px;
+        min-width: 10px;
+        outline: none;
+        overflow: hidden;
+        padding: 9px 20px 8px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 120px;
+        border: 2px solid #5B42F3;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+    }
+
 /* Contact */
 
 .contact-title {
@@ -389,10 +513,138 @@ section {
 .contact-line {
     width: 260px;
     height: 4px;
-    background-color: red;
+    background-color: #5B42F3;
     margin: auto;
     border-radius: 5px;
 }
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px;
+}
+
+.contact-form {
+    padding: 50px 50px 30px 30px;
+    width: 40%;
+    box-shadow: 0 5px 10px 0 #14213d;
+    margin-bottom: 100px;
+}
+
+.contact-form a {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    margin-top: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#contact-link {
+    display: flex;
+    gap: 50px;
+    transition: transform .2s;
+}
+
+#contact-link h2 {
+    margin-top: 7px;
+    color: #14213d;
+}
+
+#contact-link i {
+    color: #14213d;
+}
+
+#contact-link:hover {
+    display: flex;
+    gap: 50px;
+    transform: scale(1.03);
+    color: #5B42F3;
+}
+
+#contact-link h2:hover {
+    margin-top: 7px;
+    color: #5B42F3;
+}
+
+#contact-link i:hover {
+    color: #5B42F3;
+}
+
+
+.contact-btn {
+    background-color: #14213d;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 120px;
+    border: 2px solid #5B42F3;
+  }
+  
+  .contact-btn:hover,
+  .contact-btn:focus {
+    opacity: .75;
+  }
+
+  footer {
+      width: 100%;
+      background-color: #14213d;
+      height: 10%;
+      color: white;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .contact-container  {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 50px;
+        flex-direction: column;
+      }
+      .contact  {
+        margin-top: 250px;
+      }
+
+      #contact-link h2 {
+          font-size: 15px;
+          margin-top: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+        box-shadow: 0 5px 10px 0 #14213d;
+        margin-bottom: 50px;
+    }
+    }
 
 
 
