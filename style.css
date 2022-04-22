@@ -169,6 +169,12 @@ section {
 
 }
 
+.aboutme-img {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width:850px) {
     .aboutme-content {
         display: flex;
@@ -177,13 +183,12 @@ section {
         justify-content: center;
         flex-direction: column;
     }
+    .aboutme-img {
+        width: 80%;
+        margin-bottom: 30px;
+    }
 }
 
-.aboutme-img {
-    width: 28%;
-    display: flex;
-    justify-content: center;
-}
 
 .aboutme-content img {
     width: 70%;
