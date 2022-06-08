@@ -191,8 +191,8 @@ section {
 
 
 .aboutme-content img {
-    width: 70%;
-    box-shadow: 0 5px 10px 0 #14213d;
+    width: 80%;
+    box-shadow: 0 5px 10px 0 #26272a;
 }
 
 .aboutme-pbs {
@@ -202,7 +202,7 @@ section {
 
 .aboutme-pbs h1 {
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
