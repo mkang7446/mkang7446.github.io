@@ -345,11 +345,17 @@ section {
     gap: 10px;
 }
 
+@media (max-width: 1572px) {
+    #projects-row {
+        gap: 200px;
+    }
+}
+
 @media (max-width: 768px) {
     #projects-row {
         display: flex;
         justify-content: center;
-        gap: 200px;
+        gap: 400px;
         flex-direction: column;
     }
 }
